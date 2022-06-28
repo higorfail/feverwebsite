@@ -93,7 +93,7 @@ header.sticky .navigation li a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(/img/fundo.png);
+    background-image: url(/img/fundo.png);
     background-size: cover;
 }
 
