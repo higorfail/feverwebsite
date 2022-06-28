@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Roboto:wght@400;500;700;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+
+}
+body{
+    font-size: 100%;
+    min-width: 1000px;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px, 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header.sticky{
+    background: #fff;
+    padding: 0px 100px 0px;
+}
+
+
+
+header svg{
+height: 50px;
+fill: white;
+margin-left: 105px;
+}
+
+
+header.sticky svg{
+    fill: #8e8580;
+    transition: 0.4s;
+
+}
+
+header.sticky svg:hover{
+    fill:#ceb7a0;
+}
+
+.navigation{
+    margin: 45px;
+    position: relative;
+    display: flex;
+}
+
+.navigation li{
+    list-style: none;
+    margin-left: 20px;
+    margin-right: 50px;
+    color: white;
+}
+
+.navigation li a{
+    color: white;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.navigation li a:hover{
+    color: #ceb7a0;
+}
+
+
+header.sticky .navigation li a{
+    color: #8e8580;
+}
+
+header.sticky .navigation li a:hover{
+    color: #ceb7a0;
+    transition: 0.4s;
+}
+
+.conteudo-principal{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(/img/fundo.png);
+    background-size: cover;
+}
+
+.conteudo-principal-escrito{
+    max-width: 900px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+
+.conteudo-principal-titulo{
+    max-width: 1000px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 35px;
+    color: white;
+    padding-top: 550px;
+    padding-bottom: 10px;
+align-items: center;
+
+}
+
+.conteudo-principal-subtitulo{
+    max-width: 900px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 100;
+    font-size: 15x;
+    color: white;
+    align-items: center;
+}
+
+.conteudo-principal-botao{
+    max-width: 900px;
+    text-align: center;
+    background-color: white;
+    color:#8e8580;
+    width: 180px;
+    height: 60px;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    size: 50px;
+    font-weight: 600;
+    margin: 40px;
+    align-content: center;
+    align-items: center;
+}
+
+.conteudo-principal-botao:hover{
+    background-color: #CEC7C4;
+    transition: 0.5s;
+    letter-spacing: 1PX;
+}
+
+section{
+    padding: 125px;
+    
+}
+
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.row .col50{
+    position: relative;
+    width: 48%;
+
+}
+
+.titulo-texto{
+    color: #8e8580;
+    font-size: 3em;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+.texto-sobre{
+    color: gray;
+font-weight: 100;
+    font-size: 1.5em;
+    margin-right: 50px;
+}
+
+.row .col50 .imgBx{
+    position: relative;
+    width: 100%;
+    /*min-height: 300px;*/
+    height: 100%;
+}
+
+.row .col50 .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.fevercontent{
+    background-color:#8e8580;
+}
+
+.branco .titulo-texto,
+.branco p
+{
+    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.fevercontent .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.fevercontent .content .box{
+width: 340px;
+margin: 50px;
+padding: 35px;
+background: #fff;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+.fevercontent .botaoid{
+background-color: #8e8580;
+margin-top: 15px;
+padding: 15px 25px;
+border: none;
+color: #fff;
+cursor: pointer;
+transition: 0.5s;
+
+}
+
+.fevercontent .botaoid:hover{
+    background-color:#ceb7a0;
+    margin-top: 15px;
+    padding: 15px 25px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    letter-spacing: 2PX;
+    }
+    
+
+
+
+.fevercontent .content .box .imgBx{
+    position: relative;
+    width: 270px;
+    height: 220px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+
+
+.fevercontent .content .box .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 2s;
+}
+
+.fevercontent .content .box .imgBx img:hover{
+    transform: scale(1.5);
+    transition: 1s;    
+}
+
+
+.fevercontent .content .box .text{
+    text-align: center;
+    font-weight: 100;
+    margin-bottom: 10px;
+    color: #8e8580;
+}
+.fevercontent .content .box p{
+    text-align: center;
+font-weight: 100;
+}
+
+.contato{
+background-color:#ceb7a0;
+align-items: center;
+justify-content: center;
+}
+
+.contato .botao button{
+    font-size: 1.5em;
+    background-color: #fff;
+    padding: 25px;
+    max-width: 300px;
+    font-weight: 500;
+    border-radius: 15px;
+    border: none;
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: 2px;cursor: pointer;
+    transition: 0.5s;
+}
+.contato .botao button:hover{
+    font-size: 1.5em;
+    background-color:#ceb7a0;
+    padding: 25px;
+    max-width: 300px;
+    font-weight: 500;
+    border-radius: 15px;
+    border: none;
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: 2px;cursor: pointer;
+    transition: 0.5s;
+}
+
+
+.rodape{
+  padding: 32px;
+}
+.rodape svg{
+    height: 35px;
+display: block;
+margin: 0 auto;
+fill: #8e8580;
+transition: 0.4s;
+
+}
+
+.rodape svg:hover{
+    height: 35px;
+display: block;
+margin: 0 auto;
+fill:#ceb7a0;
+}
+.copyrightText{
+padding: 8px 40px;
+margin-top: 25px;
+text-align: center;
+font-weight: 200;
+}
+
+.copyrightText p{
+    color: #8e8580;
+}
+.copyrightText a{
+    color:#ceb7a0;
+}
+
+.copyrightText a:hover{
+    color:#8e8580;
+    transition: 0.5s;
+}
+
